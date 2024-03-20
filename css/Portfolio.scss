@@ -2,9 +2,9 @@
 @import url('reset.css');
 
 @font-face { /* 메인 타이틀 글씨 */
-    font-family: 'ShinDongYupHandwriting-R';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/ShinDongYupHandwriting-R.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'TTHakgyoansimMabeopsaR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMabeopsaR.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -27,7 +27,7 @@
 :root {
     --font-kr: 'SUIT-Regular';
     --font-en: 'ChosunCentennial';
-    --font-title:'ShinDongYupHandwriting-R';
+    --font-title:'TTHakgyoansimMabeopsaR';
     --red-color: #FF4545;
     --mockup-margin-top: 250px;
     --frame-margin-top: 222px;
@@ -36,7 +36,6 @@
 html, body {
     font-size: 62.5%;
     font-family: var(--font-kr);
-
 }
 
 .inner {
@@ -51,36 +50,40 @@ html, body {
     background: url(../img/main_img.png) center center / cover no-repeat;
     position: relative;
     .header_title {
-        display: flex;
-        justify-content: space-between;
-        h1 a {
-            width: 4.37vw;
-            figure {
-                height: 6.2vh;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }/* h1 end */
-        .menu .pc_gnb ul {
+        // position: fixed;
+        .header_menu {
             display: flex;
-            gap: 40px;
-            text-align: center;
-            line-height: 6.2vh;
-            li {
-                font-size: 2rem;
-                font-family: var(--font-en);
+            justify-content: space-between;
+            h1 a {
+                width: 4.37vw;
+                figure {
+                    height: 6.2vh;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }/* h1 end */
+            .menu .pc_gnb ul {
+                display: flex;
+                gap: 40px;
+                text-align: center;
+                line-height: 6.2vh;
+                li {
+                    font-size: 2rem;
+                    font-family: var(--font-en);
+                }
             }
         }
     }/* header_title end */
 
     .open_text {
         font-family: var(--font-title);
-        font-size: 25rem;
-        margin-top: 6rem;
+        font-size: 15rem;
+        margin-top: 11rem;
         h2:last-child {
+            margin-top: 10rem;
             text-align: right;
         }
     }/* open_text end */
@@ -101,6 +104,7 @@ html, body {
 
 .main {
     .about {
+        position: relative;
         .inner {
             max-width: 1330px;
             margin: 23.2rem auto;
@@ -147,55 +151,222 @@ html, body {
             }/* left end */
 
             .right {
-                width: calc(100% / 2);
+                width: 100%;
                 display: flex;
                 font-size: 1.8rem;
+                gap: 5rem;
                 h5 {font-family: var(--font-en);}
                 .about_firat {
-                    width: 58%;
+                    width: 50%;
                     padding-top: 15.2rem;
-                    margin-right: 5rem;
                     div {
                         h5 {margin-bottom:1.5rem}
-                       .first {
+                        .first {
                         display: flex;
                         gap: 2rem;
-                       } 
-                       .last {
-                        display: flex;
-                        gap: 2rem;
-                       }
+                        }
+                        .last {
+                            display: flex;
+                            gap: 2rem;
+                        }
                     }
                 }
-                .EDUCATION {margin-top: 7.2rem;}
+                .EDUCATION {margin-top: 11rem;}
 
                 .about_last {
                     padding-top: 15.2rem;
-                    width: 40%;
+                    width: 50%;
                     div {
                         h5 {margin-bottom:1.5rem}
-                       .first {
-                        display: flex;
-                        gap: 2rem;
-                       } 
-                       .last {
-                        display: flex;
-                        gap: 2rem;
-                       }
+                        .first {
+                            display: flex;
+                            gap: 2rem;
+                        } 
+                        .last {
+                            display: flex;
+                            gap: 2rem;
+                        }
                     }
-                    .skills div {
-                        width: 30px;
-                        display: flex;
+                    .skills .skills_item {
+                        width: 100%;                        
+                        div {
+                            display: flex;
+                            margin-top: 1.5rem;
+                            width: 30px;
+                            height: 30px;
+                            img {
+                                margin-right: 1rem;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .keyword {
+                        margin-top: 7rem;
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            p {
+                                margin-right: 2rem;
+                            }
+                            div {
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }/* about_last */
+            }/* right end */
+        }/* inner end */
+        .about_box {
+            width: 8.64vw;
+            height: 4.75vh;
+            font-size: 2rem;
+            line-height: 4.5vh;
+            text-align: center;
+            border: 1px solid #333;
+            border-radius: 1.5rem;
+            position: absolute;
+            bottom: 10%;
+            right: 43%;
+            transform: translateX(-50%);
+        }
+    }/* about end */
+
+    .web_design {
+        .item {
+            position: relative;
+            .inner {
+                display: flex;
+                height: 100vh;
+                .mockup {
+                    width: 43.37vw;
+                    height: 35.93vw;
+                    margin-top: 100px;
+                    figure {
+                        height: 100%;
                         img {
-                            margin-right: 1.5rem;
-                            width: 100%;
                             height: 100%;
                             object-fit: cover;
                         }
                     }
-                    .keyword {margin-top: 7.2rem;}
-                }/* about_last */
-            }/* right end */
-        }/* inner end */
-    }/* about end */
+                }
+                .frame_right {
+                    display: none;
+                }
+                .text {
+                    font-size: 2rem;
+                    font-family: var(--font-kr);
+                    margin-top: 21rem;
+                    margin-left: 14rem;
+                    h5 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                    }
+                    > p {
+                        margin: 5rem 0;
+                    }
+                    div {
+                        display: flex;
+                        margin-top: 2rem;
+                        span {
+                            margin-right: 3rem;
+                            font-weight: bold;
+                        }
+                    }
+                    .web_key {
+                        margin-top: 3rem;
+                        p {
+                            margin-right: 2.5rem;
+                        }
+                    }
+                    .btn {
+                        margin-top: 5rem;
+                        .main_btn {
+                            width: 9.31vw;
+                            height: 50px;
+                            background-color: var(--red-color);
+                            color: #fff;
+                            font-family: var(--font-kr);
+                            font-size: 2rem;
+                            border-radius: 1.5rem;
+                        }
+                    }
+                    .frame_right {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-60%);
+                    }
+                }/* text */
+            }/* inner */
+        }
+
+        .item_left {
+            margin-top: 15rem;
+            .inner {
+                position: relative;
+                .frame_left {
+                    position: absolute;
+                    top: 43%;
+                    left: -150px;
+                    transform: translateY(-50%);
+                }
+                .text_left {
+                    width: 900px;
+                    font-size: 2rem;
+                    font-family: var(--font-kr);
+                    text-align: right;
+                    margin-top: 21rem;
+                    margin-right: 4rem;
+                    h5 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                    }
+                    > p {
+                        margin: 5rem 0;
+                    }
+                    div {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 2rem;
+                        span {
+                            margin-left: 3rem;
+                            font-weight: bold;
+                        }
+                    }
+                    .web_key {
+                        margin-top: 3rem;
+                        p {
+                            margin-left: 2.5rem;
+                        }
+                    }
+                    .btn {
+                        margin-top: 5rem;
+                        .main_btn {
+                            width: 9.31vw;
+                            height: 50px;
+                            background-color: var(--red-color);
+                            color: #fff;
+                            font-family: var(--font-kr);
+                            font-size: 2rem;
+                            border-radius: 1.5rem;
+                        }
+                        .other {
+                            width: 7.18vw;
+                            font-size: 2rem;
+                            font-family: var(--font-kr);
+                            color: var(--red-color);
+                            border: 1px solid var(--red-color);
+                            border-radius: 1.5rem;
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+                .mockup {
+                    margin-left: 10rem;
+                }
+            }/* inner */
+        }
+    }
 }

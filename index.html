@@ -12,34 +12,36 @@
         <header class="header">
             <div class="inner">
                 <div class="header_title">
-                    <h1>
-                        <a href="index.html">
-                            <figure>
-                                <img src="img/logo.png" alt="ruby">
-                            </figure>
-                        </a>
-                    </h1>
-                    <div class="menu">
-                        <nav class="pc pc_gnb">
-                            <ul class="gnb">
-                                <li><a href="#">Main</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </nac><!-- gnb end -->
-                        <button class="mobile"><img src="img/icon_mobile_menu.png" alt="메뉴"></button>
-                        <nav class="mobile mobile_gnb">
-                            <ul class="gnb">
-                                <li><a href="#">Main</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </nac><!-- gnb end -->
-                    </div><!-- menu end -->
+                    <div class="header_menu">
+                        <h1>
+                            <a href="index.html">
+                                <figure>
+                                    <img src="img/logo.png" alt="ruby">
+                                </figure>
+                            </a>
+                        </h1>
+                        <div class="menu">
+                            <nav class="pc pc_gnb">
+                                <ul class="gnb">
+                                    <li><a href="#">Main</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </nac><!-- gnb end -->
+                            <button class="mobile"><img src="img/icon_mobile_menu.png" alt="메뉴"></button>
+                            <nav class="mobile mobile_gnb">
+                                <ul class="gnb">
+                                    <li><a href="#">Main</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </nac><!-- gnb end -->
+                        </div><!-- menu end -->
+                    </div>
                 </div><!-- header_title end -->
                 <div class="open_text">
                     <h2>Welcome to my</h2>
@@ -111,16 +113,20 @@
                         <div class="about_last">
                             <div class="skills">
                                 <h5>SKILLS</h5>
-                                <div>
-                                    <img src="img/icon-html.png" alt="HTML"/>
-                                    <img src="img/icon-css.png" alt="css"/>
-                                    <img src="img/icon-jquery.png" alt="jquery"/>
-                                    <img src="img/icon-java.png" alt="javascipt"/>
-                                    <img src="img/icon-photoshop.png" alt="photoshop"/>
-                                    <img src="img/icon-figma.png" alt="figma"/>
-                                    <img src="img/icon-Illustrator.png" alt="Illustrator"/>
-                                    <img src="img/icon-powerpoint.png" alt="powerpoint"/>
-                                    <img src="img/icon-Excel.png" alt="Excel"/>
+                                <div class="skills_item">
+                                    <div>
+                                        <img src="img/icon-html.png" alt="HTML"/>
+                                        <img src="img/icon-css.png" alt="css"/>
+                                        <img src="img/icon-jquery.png" alt="jquery"/>
+                                        <img src="img/icon-java.png" alt="javascipt"/>
+                                    </div>
+                                    <div>
+                                        <img src="img/icon-photoshop.png" alt="photoshop"/>
+                                        <img src="img/icon-figma.png" alt="figma"/>
+                                        <img src="img/icon-Illustrator.png" alt="Illustrator"/>
+                                        <img src="img/icon-powerpoint.png" alt="powerpoint"/>
+                                        <img src="img/icon-Excel.png" alt="Excel"/>
+                                    </div>
                                 </div>
                             </div><!-- skills -->
                             <div class="keyword">
@@ -130,8 +136,10 @@
                                     <p>#책임감</p>
                                     <p>#밝음</p>
                                     <p>#실행력</p>
-                                    <p>#적응력</p>
-                                    <p>#성장지향</p>
+                                    <div>
+                                        <p>#적응력</p>
+                                        <p>#성장지향</p>
+                                    </div>
                                 </div>
                             </div><!-- keyword -->
                         </div>
@@ -143,15 +151,14 @@
             </section><!-- about -->
 
             <section class="web_design">
-                <div class="inner">
-                    <div class="list">
-                        <div class="item">
+                <div class="list">
+                    <div class="item">
+                        <div class="inner">
                             <div class="mockup">
                                 <figure>
                                     <img src="img/mockup_br.png" alt="배스킨라빈스 목업">
                                 </figure>
                             </div><!-- mockup -->
-
                             <div class="text">
                                 <h5>Baskin Robbins</h5>
                                 <p>아이스크림/디저트 브랜드 배스킨 라빈스 모작 사이트입니다.</p>
@@ -167,63 +174,64 @@
                                     <p><span>언어</span></p>
                                     <p>HTML / CSS</p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
-                                    <p>모작</p>
+                                    <p>#모작</p>
                                 </div>
+                                <div class="btn">
+                                    <button class="main_btn">사이트 바로가기</button>
+                                </div><!-- btn -->
                                 <div class="frame_right">
                                     <figure>
                                         <img src="img/frame_right.png" alt="텍스트 프레임">
                                     </figure>
-                                </div><!-- frame_right -->
+                                </div>
                             </div><!-- text end -->
+                        </div><!-- inner -->
+                    </div><!-- item -->
 
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-
-                        <div class="item">
-                            <div class="text">
+                    <div class="item item_left">
+                        <div class="inner">
+                            <div class="text_left">
                                 <h5>악보바다</h5>
                                 <p>다양한 악보를 편리하게 제공하는 악보나라 리디자인 홈페이지입니다.</p>
                                 <div>
-                                    <p><span>참여</span></p>
                                     <p>디자인, 퍼블리싱 100%</p>
+                                    <p><span>참여</span></p>
                                 </div>
                                 <div>
-                                    <p><span>도구</span></p>
                                     <p>PhotoShop, VSCode</p>
+                                    <p><span>도구</span></p>
                                 </div>
                                 <div>
-                                    <p><span>언어</span></p>
                                     <p>HTML / CSS / javascipt</p>
+                                    <p><span>언어</span></p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
-                                    <p>리디자인</p>
+                                    <p>#리디자인</p>
                                 </div>
                                 <div class="frame_left">
                                     <figure>
                                         <img src="img/frame_left.png" alt="텍스트 프레임">
                                     </figure>
                                 </div><!-- frame_right -->
+                                <div class="btn btn_left">
+                                    <button class="other">기획안</button>
+                                    <button class="other">디자인</button>
+                                    <button class="main_btn">사이트 바로가기</button>
+                                </div><!-- btn -->
                             </div><!-- text end -->
-
                             <div class="mockup">
                                 <figure>
                                     <img src="img/mockup_akbobada.png" alt="악보바다 목업">
                                 </figure>
                             </div><!-- mockup -->
+                        </div>
+                    </div><!-- item -->
 
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                                <button class="other">디자인</button>
-                                <button class="other">기획안</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-
-                        <div class="item">
+                    <div class="item">
+                        <div class="inner">
                             <div class="mockup_small">
                                 <figure>
                                     <img src="img/mockup_으뜸안경.png" alt="으뜸50안경 목업">
@@ -234,7 +242,6 @@
                                     </figure>
                                 </div><!-- phone -->
                             </div><!-- mockup -->
-
                             <div class="text">
                                 <h5>으뜸50안경</h5>
                                 <p>폭 넓은 안경 스타일을 제공하는 으뜸50안경 리디자인 홈페이지입니다.</p>
@@ -250,28 +257,29 @@
                                     <p><span>언어</span></p>
                                     <p>HTML / CSS / JavaScript / Jqury</p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
                                     <p>#반응형</p>
                                     <p>#리디자인</p>
                                     <p>#서브페이지</p>
                                 </div>
+                                <div class="btn">
+                                    <button class="main_btn">사이트 바로가기</button>
+                                    <button class="other">디자인</button>
+                                    <button class="other">기획안</button>
+                                </div><!-- btn -->
                                 <div class="frame_right">
                                     <figure>
                                         <img src="img/frame_right.png" alt="텍스트 프레임">
                                     </figure>
                                 </div><!-- frame_right -->
                             </div><!-- text end -->
+                        </div>
+                    </div><!-- item -->
 
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                                <button class="other">디자인</button>
-                                <button class="other">기획안</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-
-                        <div class="item">
-                            <div class="text">
+                    <div class="item item_left">
+                        <div class="inner">
+                            <div class="text_left">
                                 <h5>Natuur</h5>
                                 <p>아이스크림/디저트 브랜드 나뚜루 리디자인 홈페이지입니다.</p>
                                 <div>
@@ -286,7 +294,7 @@
                                     <p><span>언어</span></p>
                                     <p>HTML / CSS</p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
                                     <p>#리디자인</p>
                                 </div>
@@ -295,22 +303,22 @@
                                         <img src="img/frame_left.png" alt="텍스트 프레임">
                                     </figure>
                                 </div><!-- frame_left -->
+                                <div class="btn">
+                                    <button class="other">기획안</button>
+                                    <button class="other">디자인</button>
+                                    <button class="main_btn">사이트 바로가기</button>
+                                </div><!-- btn -->
                             </div><!-- text end -->
-
                             <div class="mockup">
                                 <figure>
                                     <img src="img/mockup_natuur.png" alt="나뚜루 목업">
                                 </figure>
                             </div><!-- mockup -->
+                        </div>
+                    </div><!-- item -->
 
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                                <button class="other">디자인</button>
-                                <button class="other">기획안</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-
-                        <div class="item">
+                    <div class="item">
+                        <div class="inner">
                             <div class="mockup_small">
                                 <figure>
                                     <img src="img/mockup_F5NATURE.png" alt="F5NATURE 목업">
@@ -319,7 +327,6 @@
                                     <img src="img/F5NATURE_mobile_mockup.png" alt="F5NATURE 모바일 목업">
                                 </figure>
                             </div><!-- mockup -->
-
                             <div class="text">
                                 <h5>F5NATURE</h5>
                                 <p>다양한 향기를 판매하는 F5NATURE 리디자인 홈페이지입니다.</p>
@@ -335,26 +342,27 @@
                                     <p><span>언어</span></p>
                                     <p>HTML / CSS / JavaScript / Jqury</p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
                                     <p>#반응형</p>
                                     <p>#리디자인</p>
                                 </div>
-                                <div class="frame_left">
+                                <div class="btn">
+                                    <button class="main_btn">사이트 바로가기</button>
+                                    <button class="other">디자인</button>
+                                </div><!-- btn -->
+                                <div class="frame_right">
                                     <figure>
                                         <img src="img/frame_right.png" alt="텍스트 프레임">
                                     </figure>
                                 </div><!-- frame_left -->
                             </div><!-- text end -->
+                        </div>
+                    </div><!-- item -->
 
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                                <button class="other">디자인</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-
-                        <div class="item">
-                            <div class="text">
+                    <div class="item item_left">
+                        <div class="inner">
+                            <div class="text_left">
                                 <h5>천연비누 상세페이지</h5>
                                 <p>천연비누 상세페이지를 모작한 페이지입니다.</p>
                                 <div>
@@ -369,7 +377,7 @@
                                     <p><span>언어</span></p>
                                     <p>HTML / CSS</p>
                                 </div>
-                                <div>
+                                <div class="web_key">
                                     <p>#PC</p>
                                     <p>#상세페이지</p>
                                 </div>
@@ -378,8 +386,10 @@
                                         <img src="img/frame_left.png" alt="텍스트 프레임">
                                     </figure>
                                 </div><!-- frame_left -->
+                                <div class="btn">
+                                    <button class="main_btn">사이트 바로가기</button>
+                                </div><!-- btn -->
                             </div><!-- text end -->
-
                             <div class="mockup_small">
                                 <figure class="left">
                                     <img src="img/포토샵_상세페이지_1.png" alt="천연비뉴 상세페이지">
@@ -388,14 +398,9 @@
                                     <img src="img/포토샵_상세페이지_2.png" alt="천연비누 상세페이지">
                                 </figure>
                             </div><!-- mockup -->
-
-                            <div class="btn">
-                                <button>사이트 바로가기</button>
-                            </div><!-- btn -->
-                        </div><!-- item -->
-                        
-                    </div><!-- list -->
-                </div><!-- inner end -->
+                        </div>
+                    </div><!-- item -->
+                </div><!-- list -->
             </section><!-- web_design -->
 
             <section class="graphic">

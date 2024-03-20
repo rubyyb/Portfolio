@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("reset.css");
 @font-face { /* 메인 타이틀 글씨 */
-  font-family: "ShinDongYupHandwriting-R";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/ShinDongYupHandwriting-R.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "TTHakgyoansimMabeopsaR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMabeopsaR.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face { /* 영어체 */
@@ -25,7 +25,7 @@
 :root {
   --font-kr: "SUIT-Regular";
   --font-en: "ChosunCentennial";
-  --font-title:"ShinDongYupHandwriting-R";
+  --font-title:"TTHakgyoansimMabeopsaR";
   --red-color: #FF4545;
   --mockup-margin-top: 250px;
   --frame-margin-top: 222px;
@@ -51,39 +51,40 @@ html, body {
   /* open_text end */
   /* last_text end */
 }
-.header .header_title {
+.header .header_title .header_menu {
   display: flex;
   justify-content: space-between;
   /* h1 end */
 }
-.header .header_title h1 a {
+.header .header_title .header_menu h1 a {
   width: 4.37vw;
 }
-.header .header_title h1 a figure {
+.header .header_title .header_menu h1 a figure {
   height: 6.2vh;
 }
-.header .header_title h1 a figure img {
+.header .header_title .header_menu h1 a figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header .header_title .menu .pc_gnb ul {
+.header .header_title .header_menu .menu .pc_gnb ul {
   display: flex;
   gap: 40px;
   text-align: center;
   line-height: 6.2vh;
 }
-.header .header_title .menu .pc_gnb ul li {
+.header .header_title .header_menu .menu .pc_gnb ul li {
   font-size: 2rem;
   font-family: var(--font-en);
 }
 .header .open_text {
   font-family: var(--font-title);
-  font-size: 25rem;
-  margin-top: 6rem;
+  font-size: 15rem;
+  margin-top: 11rem;
 }
 .header .open_text h2:last-child {
+  margin-top: 10rem;
   text-align: right;
 }
 .header .last_text {
@@ -104,6 +105,7 @@ html, body {
   /* about end */
 }
 .main .about {
+  position: relative;
   /* inner end */
 }
 .main .about .inner {
@@ -161,18 +163,18 @@ html, body {
   margin-right: 1.5rem;
 }
 .main .about .inner .right {
-  width: 50%;
+  width: 100%;
   display: flex;
   font-size: 1.8rem;
+  gap: 5rem;
   /* about_last */
 }
 .main .about .inner .right h5 {
   font-family: var(--font-en);
 }
 .main .about .inner .right .about_firat {
-  width: 58%;
+  width: 50%;
   padding-top: 15.2rem;
-  margin-right: 5rem;
 }
 .main .about .inner .right .about_firat div h5 {
   margin-bottom: 1.5rem;
@@ -186,11 +188,11 @@ html, body {
   gap: 2rem;
 }
 .main .about .inner .right .EDUCATION {
-  margin-top: 7.2rem;
+  margin-top: 11rem;
 }
 .main .about .inner .right .about_last {
   padding-top: 15.2rem;
-  width: 40%;
+  width: 50%;
 }
 .main .about .inner .right .about_last div h5 {
   margin-bottom: 1.5rem;
@@ -203,17 +205,182 @@ html, body {
   display: flex;
   gap: 2rem;
 }
-.main .about .inner .right .about_last .skills div {
-  width: 30px;
-  display: flex;
+.main .about .inner .right .about_last .skills .skills_item {
+  width: 100%;
 }
-.main .about .inner .right .about_last .skills div img {
-  margin-right: 1.5rem;
+.main .about .inner .right .about_last .skills .skills_item div {
+  display: flex;
+  margin-top: 1.5rem;
+  width: 30px;
+  height: 30px;
+}
+.main .about .inner .right .about_last .skills .skills_item div img {
+  margin-right: 1rem;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .main .about .inner .right .about_last .keyword {
-  margin-top: 7.2rem;
+  margin-top: 7rem;
+}
+.main .about .inner .right .about_last .keyword div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .about .inner .right .about_last .keyword div p {
+  margin-right: 2rem;
+}
+.main .about .inner .right .about_last .keyword div div {
+  margin-top: 1rem;
+}
+.main .about .about_box {
+  width: 8.64vw;
+  height: 4.75vh;
+  font-size: 2rem;
+  line-height: 4.5vh;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 1.5rem;
+  position: absolute;
+  bottom: 10%;
+  right: 43%;
+  transform: translateX(-50%);
+}
+.main .web_design .item {
+  position: relative;
+  /* inner */
+}
+.main .web_design .item .inner {
+  display: flex;
+  height: 100vh;
+  /* text */
+}
+.main .web_design .item .inner .mockup {
+  width: 43.37vw;
+  height: 35.93vw;
+  margin-top: 100px;
+}
+.main .web_design .item .inner .mockup figure {
+  height: 100%;
+}
+.main .web_design .item .inner .mockup figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web_design .item .inner .frame_right {
+  display: none;
+}
+.main .web_design .item .inner .text {
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  margin-top: 21rem;
+  margin-left: 14rem;
+}
+.main .web_design .item .inner .text h5 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main .web_design .item .inner .text > p {
+  margin: 5rem 0;
+}
+.main .web_design .item .inner .text div {
+  display: flex;
+  margin-top: 2rem;
+}
+.main .web_design .item .inner .text div span {
+  margin-right: 3rem;
+  font-weight: bold;
+}
+.main .web_design .item .inner .text .web_key {
+  margin-top: 3rem;
+}
+.main .web_design .item .inner .text .web_key p {
+  margin-right: 2.5rem;
+}
+.main .web_design .item .inner .text .btn {
+  margin-top: 5rem;
+}
+.main .web_design .item .inner .text .btn .main_btn {
+  width: 9.31vw;
+  height: 50px;
+  background-color: var(--red-color);
+  color: #fff;
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+.main .web_design .item .inner .text .frame_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-60%);
+}
+.main .web_design .item_left {
+  margin-top: 15rem;
+  /* inner */
+}
+.main .web_design .item_left .inner {
+  position: relative;
+}
+.main .web_design .item_left .inner .frame_left {
+  position: absolute;
+  top: 43%;
+  left: -150px;
+  transform: translateY(-50%);
+}
+.main .web_design .item_left .inner .text_left {
+  width: 900px;
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  text-align: right;
+  margin-top: 21rem;
+  margin-right: 4rem;
+}
+.main .web_design .item_left .inner .text_left h5 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main .web_design .item_left .inner .text_left > p {
+  margin: 5rem 0;
+}
+.main .web_design .item_left .inner .text_left div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+.main .web_design .item_left .inner .text_left div span {
+  margin-left: 3rem;
+  font-weight: bold;
+}
+.main .web_design .item_left .inner .text_left .web_key {
+  margin-top: 3rem;
+}
+.main .web_design .item_left .inner .text_left .web_key p {
+  margin-left: 2.5rem;
+}
+.main .web_design .item_left .inner .text_left .btn {
+  margin-top: 5rem;
+}
+.main .web_design .item_left .inner .text_left .btn .main_btn {
+  width: 9.31vw;
+  height: 50px;
+  background-color: var(--red-color);
+  color: #fff;
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+.main .web_design .item_left .inner .text_left .btn .other {
+  width: 7.18vw;
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-radius: 1.5rem;
+  margin-right: 2rem;
+}
+.main .web_design .item_left .inner .mockup {
+  margin-left: 10rem;
 }/*# sourceMappingURL=Portfolio.css.map */
