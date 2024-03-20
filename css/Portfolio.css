@@ -103,6 +103,7 @@ html, body {
 /* header end */
 .main {
   /* about end */
+  /* web_design */
 }
 .main .about {
   position: relative;
@@ -247,8 +248,10 @@ html, body {
   right: 43%;
   transform: translateX(-50%);
 }
+.main .web_design {
+  /* item */
+}
 .main .web_design .item {
-  position: relative;
   /* inner */
 }
 .main .web_design .item .inner {
@@ -277,6 +280,7 @@ html, body {
   font-family: var(--font-kr);
   margin-top: 21rem;
   margin-left: 14rem;
+  position: relative;
 }
 .main .web_design .item .inner .text h5 {
   font-size: 3rem;
@@ -311,24 +315,31 @@ html, body {
   font-size: 2rem;
   border-radius: 1.5rem;
 }
-.main .web_design .item .inner .text .frame_right {
+.main .web_design .item .inner .text::before {
+  content: "";
+  width: 142%;
+  height: 86%;
+  display: inline-block;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-60%);
+  top: -117px;
+  left: -45px;
+}
+.main .web_design .item .inner .text::after {
+  content: "";
+  width: 188%;
+  height: 73%;
+  display: inline-block;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  top: -63px;
+  left: -101px;
 }
 .main .web_design .item_left {
   margin-top: 15rem;
   /* inner */
-}
-.main .web_design .item_left .inner {
-  position: relative;
-}
-.main .web_design .item_left .inner .frame_left {
-  position: absolute;
-  top: 43%;
-  left: -150px;
-  transform: translateY(-50%);
 }
 .main .web_design .item_left .inner .text_left {
   width: 900px;
@@ -337,6 +348,29 @@ html, body {
   text-align: right;
   margin-top: 21rem;
   margin-right: 4rem;
+  position: relative;
+}
+.main .web_design .item_left .inner .text_left::before {
+  content: "";
+  width: 106%;
+  height: 86%;
+  display: inline-block;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  position: absolute;
+  top: -117px;
+  right: -45px;
+}
+.main .web_design .item_left .inner .text_left::after {
+  content: "";
+  width: 140%;
+  height: 73%;
+  display: inline-block;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  top: -63px;
+  right: -101px;
 }
 .main .web_design .item_left .inner .text_left h5 {
   font-size: 3rem;
@@ -384,8 +418,13 @@ html, body {
 .main .web_design .item_left .inner .mockup {
   margin-left: 10rem;
 }
+.main .web_design .item {
+  margin-top: 15rem;
+}
 .main .web_design .item .mockup_small {
   position: relative;
+  margin-right: 14rem;
+  margin-top: 17rem;
 }
 .main .web_design .item .mockup_small figure {
   width: 34.12vw;
@@ -400,13 +439,83 @@ html, body {
   width: 271px;
   height: 513px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 115px;
+  right: -180px;
 }
 .main .web_design .item .mockup_small .phone figure {
+  width: 100%;
   height: 100%;
 }
 .main .web_design .item .mockup_small .phone figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web_design .item .other {
+  width: 7.18vw;
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-radius: 1.5rem;
+  margin-left: 2rem;
+}
+.main .web_design .item_left .text_left {
+  width: 675px;
+}
+.main .web_design .item_left .mockup_small {
+  position: relative;
+  margin-left: 130px;
+}
+.main .web_design .item_left .mockup_small .left {
+  width: 400px;
+  height: 822px;
+}
+.main .web_design .item_left .mockup_small .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web_design .item_left .mockup_small .right {
+  width: 500px;
+  height: 867px;
+  position: absolute;
+  top: 22px;
+  right: -350px;
+}
+.main .web_design .item_left .mockup_small .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .graphic {
+  margin: 20rem 0;
+}
+.main .graphic .inner {
+  display: flex;
+}
+.main .graphic .inner .graphic_text {
+  width: 21.25vw;
+}
+.main .graphic .inner .graphic_text h6 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+.main .graphic .inner .graphic_text p {
+  font-size: 2rem;
+}
+.main .graphic .inner .graphic_img {
+  display: flex;
+}
+.main .graphic .inner .graphic_img figure {
+  width: 24.26vw;
+  height: 30.06vw;
+  margin-right: 2rem;
+}
+.main .graphic .inner .graphic_img figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
