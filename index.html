@@ -6,8 +6,21 @@
     <title>포트폴리오</title>
     <link rel="stylesheet" href="css/Portfolio.css">
     <link rel="stylesheet" href="css/Portfolio.scss">
-
     <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
+    
+    <script type="text/javascript">
+        $(function(){
+            Fancybox.bind("[data-fancybox]", {
+                // Your options go here
+            });
+            $('[data-fancybox="gallery"]').fancybox({
+                // Options will go here
+                selector : '.imglist a:visible'
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -382,35 +395,33 @@
                         <p>을 이용하여 제작한 그래픽 디자인입니다.</p>
                     </div><!-- reaphic_text end -->
 
-                    <div class="graphic_img">
-                        <figure>
+                    <div class="graphic_img" data-fancybox="gallery">
+                        <a href="img/Illustrator_1.jpg">
                             <img src="img/Illustrator_1.jpg" alt="일러스트1">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Illustrator_2.jpg" data-fancybox="gallery">
                             <img src="img/Illustrator_2.jpg" alt="일러스트2">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Illustrator_3.jpg" data-fancybox="gallery">
                             <img src="img/Illustrator_3.jpg" alt="일러스트3">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Illustrator_4.jpg" data-fancybox="gallery">
                             <img src="img/Illustrator_4.jpg" alt="일러스트4">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Photoshop_1.jpg" data-fancybox="gallery">
                             <img src="img/Photoshop_1.jpg" alt="포토샵1">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Photoshop_2.jpg" data-fancybox="gallery">
                             <img src="img/Photoshop_2.jpg" alt="포토샵2">
-                        </figure>
-                        <figure>
+                        </a>
+                        <a href="img/Photoshop_3.jpg" data-fancybox="gallery">
                             <img src="img/Photoshop_3.jpg" alt="포토샵3">
-                        </figure>
+                        </a>
                     </div><!-- graphic_img -->
                 </div><!-- inner -->
             </section><!-- sraphic -->
         </main><!-- main end -->
     </div><!-- wrap end -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="jquery.fancybox.min.js"></script>
 </body>
 </html>
