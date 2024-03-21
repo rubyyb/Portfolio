@@ -78,12 +78,20 @@ html, body {
             }
         }
     }/* header_title end */
-
-    .open_text {
+    .typing-txt {
+        display: none;
         font-family: var(--font-title);
         font-size: 15rem;
         margin-top: 11rem;
-        h2:last-child {
+        ul{
+            list-style:none;
+            li.on {  
+                font-family: var(--font-title);
+                font-size: 15rem;
+                margin-top: 11rem;
+            } 
+        }
+        ul:last-child li {
             margin-top: 10rem;
             text-align: right;
         }

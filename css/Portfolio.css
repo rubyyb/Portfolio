@@ -78,12 +78,21 @@ html, body {
   font-size: 2rem;
   font-family: var(--font-en);
 }
-.header .open_text {
+.header .typing-txt {
+  display: none;
   font-family: var(--font-title);
   font-size: 15rem;
   margin-top: 11rem;
 }
-.header .open_text h2:last-child {
+.header .typing-txt ul {
+  list-style: none;
+}
+.header .typing-txt ul li.on {
+  font-family: var(--font-title);
+  font-size: 15rem;
+  margin-top: 11rem;
+}
+.header .typing-txt ul:last-child li {
   margin-top: 10rem;
   text-align: right;
 }
