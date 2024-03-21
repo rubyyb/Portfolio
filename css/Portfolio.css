@@ -294,10 +294,10 @@ html, body {
   left: 0;
 }
 .main .web_design .item .inner .mockup .img figure {
-  height: 44vh;
+  height: 46vh;
 }
 .main .web_design .item .inner .mockup:hover .img figure img {
-  animation: img 20s infinite linear;
+  animation: img 30s infinite linear;
   animation-direction: alternate;
 }
 @keyframes img {
@@ -473,10 +473,10 @@ html, body {
   left: 0;
 }
 .main .web_design .item_left .inner .mockup_left .img figure {
-  height: 44vh;
+  height: 46vh;
 }
 .main .web_design .item_left .inner .mockup_left:hover .img figure img {
-  animation: img 20s infinite linear;
+  animation: img 13s infinite linear;
   animation-direction: alternate;
 }
 @keyframes img {
@@ -518,7 +518,7 @@ html, body {
   left: 0;
 }
 .main .web_design .item_phone .inner .mockup_small .img figure {
-  height: 44vh;
+  height: 46vh;
 }
 .main .web_design .item_phone .inner .mockup_small:hover .img figure img {
   animation: img 20s infinite linear;

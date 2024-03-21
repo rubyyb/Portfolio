@@ -269,11 +269,11 @@ html, body {
                         top: 27px;
                         left: 0;
                         figure {
-                            height: 44vh;
+                            height: 46vh;
                         }
                     }
                     &:hover .img figure img {
-                        animation: img 20s infinite linear;
+                        animation: img 30s infinite linear;
                         animation-direction: alternate;
                     }
                     @keyframes img {
@@ -450,11 +450,11 @@ html, body {
                         top: 27px;
                         left: 0;
                         figure {
-                            height: 44vh;
+                            height: 46vh;
                         }
                     }
                     &:hover .img figure img {
-                        animation: img 20s infinite linear;
+                        animation: img 13s infinite linear;
                         animation-direction: alternate;
                     }
                     @keyframes img {
@@ -495,7 +495,7 @@ html, body {
                         top: 27px;
                         left: 0;
                         figure {
-                            height: 44vh;
+                            height: 46vh;
                         }
                     }
                     &:hover .img figure img {
