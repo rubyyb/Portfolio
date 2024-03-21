@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/자동슬라이드.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <section class="graphic">
+        <div class="item">
+            <div class="inner">
+                <div class="mockup">
+                    <figure>
+                        <img src="img/pc목업.png" alt="배스킨라빈스 목업">
+                    </figure>
+                    <div class="img">
+                        <figure>
+                            <img src="img/br_main.png" alt="">
+                        </figure>
+                    </div>
+                </div><!-- mockup -->
+                <div class="text">
+                    <h5>Baskin Robbins</h5>
+                    <p>아이스크림/디저트 브랜드 배스킨 라빈스 모작 사이트입니다.</p>
+                    <div>
+                        <p><span>참여</span></p>
+                        <p>퍼블리싱 100%</p>
+                    </div>
+                    <div>
+                        <p><span>도구</span></p>
+                        <p>VSCode</p>
+                    </div>
+                    <div>
+                        <p><span>언어</span></p>
+                        <p>HTML / CSS</p>
+                    </div>
+                    <div class="web_key">
+                        <p>#PC</p>
+                        <p>#모작</p>
+                    </div>
+                    <div class="btn">
+                        <button class="main_btn">사이트 바로가기</button>
+                    </div><!-- btn -->
+                </div><!-- text end -->
+            </div><!-- inner -->
+        </div><!-- item -->
+    </section><!-- sraphic -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

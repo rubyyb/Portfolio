@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.inner {
+    display: flex;
+}
+.mockup {
+    max-width: 767px;
+    width: calc(100% - 20px);
+    position: relative;
+}
+.mockup figure {
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.mockup figure img {
+    width: 100%;
+}
+.mockup .img {
+    z-index: -1;
+    position: absolute;
+    top: 27px;
+    left: 0;
+}
+.mockup .img figure {
+    height: 42vh;
+}
+.mockup:hover .img figure img {
+    animation: img 30s infinite alternate linear;
+}
+@keyframes img {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
