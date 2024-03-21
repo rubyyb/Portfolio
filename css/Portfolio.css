@@ -80,21 +80,25 @@ html, body {
 }
 .header .typing-txt {
   display: none;
-  font-family: var(--font-title);
-  font-size: 15rem;
-  margin-top: 11rem;
 }
 .header .typing-txt ul {
   list-style: none;
 }
-.header .typing-txt ul li.on {
+.header .typing {
+  margin-top: 13.5rem;
+}
+.header .typing ul .Portfolio_text {
+  text-align: right;
+}
+.header .typing ul li {
   font-family: var(--font-title);
   font-size: 15rem;
   margin-top: 11rem;
 }
-.header .typing-txt ul:last-child li {
-  margin-top: 10rem;
-  text-align: right;
+.header .typing ul li.on {
+  font-family: var(--font-title);
+  font-size: 15rem;
+  margin-top: 11rem;
 }
 .header .last_text {
   position: absolute;
@@ -178,6 +182,7 @@ html, body {
   display: flex;
   font-size: 1.8rem;
   gap: 5rem;
+  /* about_firat */
   /* about_last */
 }
 .main .about .inner .right h5 {
@@ -185,7 +190,7 @@ html, body {
 }
 .main .about .inner .right .about_firat {
   width: 50%;
-  padding-top: 15.2rem;
+  padding-top: 11.2rem;
 }
 .main .about .inner .right .about_firat div h5 {
   margin-bottom: 1.5rem;
@@ -205,7 +210,7 @@ html, body {
   margin-top: 11rem;
 }
 .main .about .inner .right .about_last {
-  padding-top: 15.2rem;
+  padding-top: 11.2rem;
   width: 50%;
 }
 .main .about .inner .right .about_last div h5 {
@@ -221,6 +226,7 @@ html, body {
 }
 .main .about .inner .right .about_last .skills .skills_item {
   width: 100%;
+  margin-top: 2rem;
 }
 .main .about .inner .right .about_last .skills .skills_item div {
   display: flex;
@@ -236,9 +242,10 @@ html, body {
      object-fit: cover;
 }
 .main .about .inner .right .about_last .keyword {
-  margin-top: 7rem;
+  margin-top: 9rem;
 }
 .main .about .inner .right .about_last .keyword div {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -263,6 +270,9 @@ html, body {
 }
 .main .web_design {
   /* item */
+  /* item_left */
+  /* item_phone */
+  /* item_left */
 }
 .main .web_design .item {
   /* inner */
@@ -342,9 +352,14 @@ html, body {
 .main .web_design .item .inner .text .btn {
   margin-top: 5rem;
 }
-.main .web_design .item .inner .text .btn .main_btn {
+.main .web_design .item .inner .text .btn a {
   width: 9.31vw;
   height: 50px;
+  z-index: 2;
+}
+.main .web_design .item .inner .text .btn a .main_btn {
+  text-align: center;
+  line-height: 50px;
   background-color: var(--red-color);
   color: #fff;
   font-family: var(--font-kr);
@@ -433,9 +448,14 @@ html, body {
 .main .web_design .item_left .inner .text_left .btn {
   margin-top: 5rem;
 }
-.main .web_design .item_left .inner .text_left .btn .main_btn {
+.main .web_design .item_left .inner .text_left .btn a {
   width: 9.31vw;
   height: 50px;
+  z-index: 2;
+}
+.main .web_design .item_left .inner .text_left .btn a .main_btn {
+  text-align: center;
+  line-height: 50px;
   background-color: var(--red-color);
   color: #fff;
   font-family: var(--font-kr);
@@ -450,6 +470,10 @@ html, body {
   border: 1px solid var(--red-color);
   border-radius: 1.5rem;
   margin-right: 2rem;
+}
+.main .web_design .item_left .inner .text_left .btn .other p {
+  text-align: center;
+  line-height: 50px;
 }
 .main .web_design .item_left .inner .mockup_left {
   max-width: 767px;
@@ -580,14 +604,34 @@ html, body {
 .main .web_design .item_phone .inner .text .btn {
   margin-top: 5rem;
 }
-.main .web_design .item_phone .inner .text .btn .main_btn {
+.main .web_design .item_phone .inner .text .btn a {
   width: 9.31vw;
   height: 50px;
+  z-index: 2;
+}
+.main .web_design .item_phone .inner .text .btn a .main_btn {
+  width: 9.31vw;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
   background-color: var(--red-color);
   color: #fff;
   font-family: var(--font-kr);
   font-size: 2rem;
   border-radius: 1.5rem;
+}
+.main .web_design .item_phone .inner .text .btn .other {
+  width: 7.18vw;
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-radius: 1.5rem;
+  margin-left: 2rem;
+}
+.main .web_design .item_phone .inner .text .btn .other p {
+  text-align: center;
+  line-height: 50px;
 }
 .main .web_design .item_phone .inner .text::before {
   content: "";
@@ -610,15 +654,6 @@ html, body {
   position: absolute;
   top: -63px;
   left: -97px;
-}
-.main .web_design .item_phone .inner .other {
-  width: 7.18vw;
-  font-size: 2rem;
-  font-family: var(--font-kr);
-  color: var(--red-color);
-  border: 1px solid var(--red-color);
-  border-radius: 1.5rem;
-  margin-left: 2rem;
 }
 .main .web_design .item_left .text_left {
   width: 675px;

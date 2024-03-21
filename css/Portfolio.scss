@@ -80,22 +80,28 @@ html, body {
     }/* header_title end */
     .typing-txt {
         display: none;
-        font-family: var(--font-title);
-        font-size: 15rem;
-        margin-top: 11rem;
         ul{
             list-style:none;
-            li.on {  
+        }
+    }/* open_text end */
+    .typing {
+        margin-top: 13.5rem;
+        ul {
+            .Portfolio_text {
+                text-align: right;
+            }
+            li {
                 font-family: var(--font-title);
                 font-size: 15rem;
                 margin-top: 11rem;
-            } 
+                &.on {  
+                    font-family: var(--font-title);
+                    font-size: 15rem;
+                    margin-top: 11rem;
+                }
+            }
         }
-        ul:last-child li {
-            margin-top: 10rem;
-            text-align: right;
-        }
-    }/* open_text end */
+    }
 
     .last_text {
         position: absolute;
@@ -167,7 +173,7 @@ html, body {
                 h5 {font-family: var(--font-en);}
                 .about_firat {
                     width: 50%;
-                    padding-top: 15.2rem;
+                    padding-top: 11.2rem;
                     div {
                         h5 {margin-bottom:1.5rem}
                         p {margin-top: 1rem;}
@@ -181,11 +187,11 @@ html, body {
                             
                         }
                     }
-                }
+                }/* about_firat */
                 .EDUCATION {margin-top: 11rem;}
 
                 .about_last {
-                    padding-top: 15.2rem;
+                    padding-top: 11.2rem;
                     width: 50%;
                     div {
                         h5 {margin-bottom:1.5rem}
@@ -199,7 +205,8 @@ html, body {
                         }
                     }
                     .skills .skills_item {
-                        width: 100%;                        
+                        width: 100%;
+                        margin-top: 2rem;                        
                         div {
                             display: flex;
                             margin-top: 1.5rem;
@@ -214,8 +221,9 @@ html, body {
                         }
                     }
                     .keyword {
-                        margin-top: 7rem;
+                        margin-top: 9rem;
                         div {
+                            margin-top: 2rem;
                             display: flex;
                             flex-wrap: wrap;
                             p {
@@ -317,14 +325,19 @@ html, body {
                     }
                     .btn {
                         margin-top: 5rem;
-                        .main_btn {
+                        a {
                             width: 9.31vw;
                             height: 50px;
-                            background-color: var(--red-color);
-                            color: #fff;
-                            font-family: var(--font-kr);
-                            font-size: 2rem;
-                            border-radius: 1.5rem;
+                            z-index: 2;
+                            .main_btn {
+                                text-align: center;
+                                line-height: 50px;
+                                background-color: var(--red-color);
+                                color: #fff;
+                                font-family: var(--font-kr);
+                                font-size: 2rem;
+                                border-radius: 1.5rem;
+                            }
                         }
                     }
                     &::before {
@@ -351,7 +364,7 @@ html, body {
                     }
                 }/* text */
             }/* inner */
-        }
+        }/* item */
 
         .item_left {
             margin-top: 15rem;
@@ -410,14 +423,19 @@ html, body {
                     }
                     .btn {
                         margin-top: 5rem;
-                        .main_btn {
+                        a {
                             width: 9.31vw;
                             height: 50px;
-                            background-color: var(--red-color);
-                            color: #fff;
-                            font-family: var(--font-kr);
-                            font-size: 2rem;
-                            border-radius: 1.5rem;
+                            z-index: 2;
+                            .main_btn {
+                                text-align: center;
+                                line-height: 50px;
+                                background-color: var(--red-color);
+                                color: #fff;
+                                font-family: var(--font-kr);
+                                font-size: 2rem;
+                                border-radius: 1.5rem;
+                            }
                         }
                         .other {
                             width: 7.18vw;
@@ -427,6 +445,10 @@ html, body {
                             border: 1px solid var(--red-color);
                             border-radius: 1.5rem;
                             margin-right: 2rem;
+                            p {
+                                text-align: center;
+                                line-height: 50px;
+                            }
                         }
                     }
                 }
@@ -467,7 +489,7 @@ html, body {
                     }
                 }
             }/* inner */
-        }
+        }/* item_left */
 
         .item_phone {
             margin-top: 15rem;
@@ -556,14 +578,34 @@ html, body {
                     }
                     .btn {
                         margin-top: 5rem;
-                        .main_btn {
+                        a {
                             width: 9.31vw;
                             height: 50px;
-                            background-color: var(--red-color);
-                            color: #fff;
-                            font-family: var(--font-kr);
+                            z-index: 2;
+                            .main_btn {
+                                width: 9.31vw;
+                                height: 50px;
+                                text-align: center;
+                                line-height: 50px;
+                                background-color: var(--red-color);
+                                color: #fff;
+                                font-family: var(--font-kr);
+                                font-size: 2rem;
+                                border-radius: 1.5rem;
+                            }
+                        }
+                        .other {
+                            width: 7.18vw;
                             font-size: 2rem;
+                            font-family: var(--font-kr);
+                            color: var(--red-color);
+                            border: 1px solid var(--red-color);
                             border-radius: 1.5rem;
+                            margin-left: 2rem;
+                            p {
+                                text-align: center;
+                                line-height: 50px;
+                            }
                         }
                     }
                     &::before {
@@ -589,17 +631,8 @@ html, body {
                         left: -97px;
                     }
                 }/* text */
-                .other {
-                    width: 7.18vw;
-                    font-size: 2rem;
-                    font-family: var(--font-kr);
-                    color: var(--red-color);
-                    border: 1px solid var(--red-color);
-                    border-radius: 1.5rem;
-                    margin-left: 2rem;
-                }
             }
-        }/* item */
+        }/* item_phone */
 
         .item_left {
             .text_left {
@@ -630,7 +663,7 @@ html, body {
                     }
                 }
             }
-        }
+        }/* item_left */
         
     } /* web_design */
     
