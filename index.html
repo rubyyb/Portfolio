@@ -8,60 +8,29 @@
     <link rel="stylesheet" href="css/Portfolio.css">
     <link rel="stylesheet" href="css/Portfolio.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script> 
-        $(function(){
-            var typingBool = false; 
-            var typingIdx=0; 
-            var liIndex = 0;
-            var liLength = $(".header .typing-txt>ul>li").length;
+    <script src="js/header.js"></script>
 
-            // 타이핑될 텍스트를 가져온다 
-            var typingTxt = $(".header .typing-txt>ul>li").eq(liIndex).text(); 
-            typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
-            if(typingBool==false){ // 타이핑이 진행되지 않았다면 
-                typingBool=true; 
-                var tyInt = setInterval(typing,100); // 반복동작 
-            } 
-                
-            function typing(){ 
-            $(".header .typing ul li").removeClass("on");
-            $(".header .typing ul li").eq(liIndex).addClass("on");
-            if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
-                $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
-                typingIdx++; 
-            } else{ if(liIndex<liLength-1){
-                //다음문장으로  가기위해 인덱스를 1증가
-                liIndex++; 
-                //다음문장을 타이핑하기위한 셋팅
-                    typingIdx=0;
-                    typingBool = false; 
-                    typingTxt = $(".header .typing-txt>ul>li").eq(liIndex).text(); 
-                
-                //다음문장 타이핑전 1초 쉰다
-                    clearInterval(tyInt);
-                    //타이핑종료
-                
-                    setTimeout(function(){
-                    //1초후에 다시 타이핑 반복 시작
-                    tyInt = setInterval(typing,100);
-                    },1000);
-                    } else if(liIndex==liLength-1){
-                    
-                    //마지막 문장까지 써지면 반복종료
-                    clearInterval(tyInt);
-                    }
-                } 
-            }    
-        })
-    </script>
 </head>
 <body>
     <div id="wrap">
+        <div class="inner">
+            <div class="popup">
+                <p>해당 사이트는 포트폴리오용으로 제작되었으며,<br />
+                    해상도 1920X1080 브라우저에 최적화 되어있습니다.</p>
+                <button><a href="#">Close</a></button>
+            </div><!-- popup end -->
+            <div class="popup_bg">
+                <p>팝업 배경</p>
+            </div><!-- popup_bg end -->
+        </div>
+
         <header class="header">
             <div class="inner">
                 <div class="header_title">
@@ -94,7 +63,7 @@
                                 </ul>
                             </nac><!-- gnb end -->
                         </div><!-- menu end -->
-                    </div>
+                    </div><!-- header_menu end -->
                 </div><!-- header_title end -->
 
                 <div class="typing-txt"> 
@@ -102,13 +71,13 @@
                         <li>Welcome to my</li>
                         <li>Portfolio</li>
                     </ul>
-                </div> 
+                </div> <!-- typing-txt end -->
                 <div class="typing">
                     <ul>
                         <li></li>
                         <li class="Portfolio_text"></li>
                     </ul>
-                </div>  
+                </div>  <!-- typing end -->
                 <!-- <div class="open_text">
                     <h2>Welcome to my</h2>
                     <h2>Portfolio</h2>
@@ -225,7 +194,7 @@
 
             <section class="web_design">
                 <div class="list">
-                    <div class="item">
+                    <div class="item" data-aos="fade-left">
                         <div class="inner">
                             <div class="mockup">
                                 <figure>
@@ -265,7 +234,7 @@
                         </div><!-- inner -->
                     </div><!-- item -->
 
-                    <div class="item item_left">
+                    <div class="item item_left" data-aos="fade-right">
                         <div class="inner">
                             <div class="text_left">
                                 <h5>악보바다</h5>
@@ -311,7 +280,7 @@
                         </div>
                     </div><!-- item -->
 
-                    <div class="item_phone">
+                    <div class="item_phone" data-aos="fade-left">
                         <div class="inner">
                             <div class="mockup_small">
                                 <figure>
@@ -364,7 +333,7 @@
                         </div>
                     </div><!-- item -->
 
-                    <div class="item item_left">
+                    <div class="item item_left" data-aos="fade-right">
                         <div class="inner">
                             <div class="text_left">
                                 <h5>Natuur</h5>
@@ -410,7 +379,7 @@
                         </div>
                     </div><!-- item -->
 
-                    <div class="item_phone">
+                    <div class="item_phone" data-aos="fade-left">
                         <div class="inner">
                             <div class="mockup_small">
                                 <figure>
@@ -457,7 +426,7 @@
                         </div>
                     </div><!-- item -->
 
-                    <div class="item item_left">
+                    <div class="item item_left" data-aos="fade-right">
                         <div class="inner">
                             <div class="text_left" style="width: 675px;">
                                 <h5>천연비누 상세페이지</h5>
@@ -555,7 +524,7 @@
             </section><!-- sraphic -->
 
             <section class="mobile_graphic">
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                     <div class="inner">
                         <div class="mockup">
                             <figure>
@@ -603,8 +572,12 @@
                     <img src="img/KakaoTalk_code.jpg" alt="카카오톡 연결 링크">
                 </figure>
             </div><!-- footer end -->
-        </footer>
+        </footer><!-- footer end -->
     </div><!-- wrap end -->
+
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
