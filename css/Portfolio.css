@@ -44,7 +44,7 @@ html, body {
 
 .header {
   height: 100vh;
-  padding-top: 1.2rem;
+  padding-top: 2rem;
   background: url(../img/main_img.png) center center/cover no-repeat;
   position: relative;
   /* header_title end */
@@ -268,6 +268,28 @@ html, body {
   right: 43%;
   transform: translateX(-50%);
 }
+.main .web_design_title {
+  height: 550px;
+  background: url(../img/web_design_title.jpg) center center/cover fixed no-repeat;
+  color: #fff;
+  position: relative;
+}
+.main .web_design_title div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main .web_design_title div h4 {
+  font-family: var(--font-en);
+  font-size: 10rem;
+  margin-bottom: 3rem;
+}
+.main .web_design_title div p {
+  font-size: 3rem;
+  font-family: var(--font-en);
+}
 .main .web_design {
   /* item */
   /* item_left */
@@ -279,7 +301,7 @@ html, body {
 }
 .main .web_design .item .inner {
   display: flex;
-  margin: 300px auto;
+  margin: 200px auto;
   /* text */
 }
 .main .web_design .item .inner .mockup {
@@ -685,6 +707,28 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.main .graphic_title {
+  height: 550px;
+  background: url(../img/web_design_title.jpg) center center/cover fixed no-repeat;
+  color: #fff;
+  position: relative;
+}
+.main .graphic_title div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main .graphic_title div h4 {
+  font-family: var(--font-en);
+  font-size: 10rem;
+  margin-bottom: 3rem;
+}
+.main .graphic_title div p {
+  font-size: 3rem;
+  font-family: var(--font-en);
+}
 .main .graphic {
   margin: 20rem 0;
   /* inner */
@@ -724,6 +768,141 @@ html, body {
 }
 .main .graphic .inner .swiper-horizontal > .swiper-pagination-bullets, .main .graphic .inner .swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
+}
+.main .mobile_graphic {
+  /* item */
+}
+.main .mobile_graphic .item {
+  /* inner */
+}
+.main .mobile_graphic .item .inner {
+  display: flex;
+  margin: 200px auto;
+  /* text */
+}
+.main .mobile_graphic .item .inner .mockup {
+  max-width: 767px;
+  width: calc(100% - 20px);
+  margin-top: 12rem;
+  margin-right: 8rem;
+  position: relative;
+}
+.main .mobile_graphic .item .inner .mockup figure {
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.main .mobile_graphic .item .inner .mockup figure img {
+  width: 100%;
+}
+.main .mobile_graphic .item .inner .mockup .img {
+  z-index: -1;
+  position: absolute;
+  top: 27px;
+  left: 0;
+}
+.main .mobile_graphic .item .inner .mockup .img figure {
+  height: 46vh;
+}
+.main .mobile_graphic .item .inner .mockup:hover .img figure img {
+  animation: img 30s infinite linear;
+  animation-direction: alternate;
+}
+@keyframes img {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.main .mobile_graphic .item .inner .frame_right {
+  display: none;
+}
+.main .mobile_graphic .item .inner .text {
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  margin-top: 21rem;
+  margin-left: 14rem;
+  position: relative;
+  /* btn end */
+}
+.main .mobile_graphic .item .inner .text h5 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main .mobile_graphic .item .inner .text .btn_click {
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+.main .mobile_graphic .item .inner .text .btn_click p:first-child {
+  margin-bottom: 1rem;
+}
+.main .mobile_graphic .item .inner .text div {
+  display: flex;
+  margin-top: 2rem;
+}
+.main .mobile_graphic .item .inner .text div span {
+  margin-right: 3rem;
+  font-weight: bold;
+}
+.main .mobile_graphic .item .inner .text .web_key {
+  margin-top: 3rem;
+}
+.main .mobile_graphic .item .inner .text .web_key p {
+  margin-right: 2.5rem;
+}
+.main .mobile_graphic .item .inner .text .btn {
+  margin-top: 5rem;
+}
+.main .mobile_graphic .item .inner .text .btn a {
+  width: 9.31vw;
+  height: 50px;
+  z-index: 2;
+}
+.main .mobile_graphic .item .inner .text .btn a .main_btn {
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--red-color);
+  color: #fff;
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+.main .mobile_graphic .item .inner .text .btn .other {
+  width: 7.18vw;
+  font-size: 2rem;
+  font-family: var(--font-kr);
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-radius: 1.5rem;
+  margin-left: 2rem;
+}
+.main .mobile_graphic .item .inner .text .btn .other p {
+  text-align: center;
+  line-height: 50px;
+}
+.main .mobile_graphic .item .inner .text::before {
+  content: "";
+  width: 672px;
+  height: 702px;
+  display: inline-block;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  position: absolute;
+  top: -117px;
+  left: -45px;
+}
+.main .mobile_graphic .item .inner .text::after {
+  content: "";
+  width: 862px;
+  height: 576px;
+  display: inline-block;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  top: -63px;
+  left: -101px;
 }
 
 /* main */

@@ -9,111 +9,309 @@
     <script src="lib/jquery-3.7.1.min.js"></script>
 
     <script>
-        // var typingBool = false; 
-        // var typingIdx=0; 
-
-        // // 타이핑될 텍스트를 가져온다 
-        // var typingTxt = $(".typing-txt").text(); 
-
-        // typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
-
-        // if(typingBool==false){ 
-        //     // 타이핑이 진행되지 않았다면 
-        //     typingBool=true;     
-        //     var tyInt = setInterval(typing,100); // 반복동작 
-        // } 
-            
-        // function typing(){ 
-        //     if(typingIdx<typingTxt.length){ 
-        //         // 타이핑될 텍스트 길이만큼 반복 
-        //         $(".typing").append(typingTxt[typingIdx]);
-        //         // 한글자씩 이어준다. 
-        //         typingIdx++; 
-        //     } else{ 
-        //         //끝나면 반복종료 
-        //         clearInterval(tyInt); 
-        //     } 
-        // }  
         $(function(){
-            var typingBool = false; 
-            var typingIdx=0; 
-            var liIndex = 0;
-            var liLength = $(".typing-txt>ul>li").length;
+            //스크롤 시 아이템 나타나기
+            // let webList = document.querySelector('.web_design .list');
+            // let webItem = document.querySelectorAll('.web_design .list .item');
+            
+            // //브라우저에서 해당요소가 떨어지는 y값 
+            // let webTop = webList.offsetTop;
+            // // console.log(webTop);
+            // window.addEventListener('scroll', () => {
+            //     let scrollBar = window.scrollY;
+            //     console.log(scrollBar);
+            //     if(webTop <= scrollBar) {
+            //         webItem.forEach((item, index) => {
+            //             item.classList.add('on' + index, 'active');
+            //         })
+            //     } else if(scrollBar === 0) {
+            //         webItem.forEach((item, index) => {
+            //             item.classList.remove('on' + index, 'active');
+            //         })
+            //     }
+            // })
 
-            // 타이핑될 텍스트를 가져온다 
-            var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-            typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
-            if(typingBool==false){ // 타이핑이 진행되지 않았다면 
-                typingBool=true; 
-                var tyInt = setInterval(typing,100); // 반복동작 
-            } 
-                
-            function typing(){ 
-            $(".typing ul li").removeClass("on");
-            $(".typing ul li").eq(liIndex).addClass("on");
-            if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
-                $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
-                typingIdx++; 
-            } else{ if(liIndex<liLength-1){
-                //다음문장으로  가기위해 인덱스를 1증가
-                liIndex++; 
-                //다음문장을 타이핑하기위한 셋팅
-                    typingIdx=0;
-                    typingBool = false; 
-                    typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-                
-                //다음문장 타이핑전 1초 쉰다
-                    clearInterval(tyInt);
-                    //타이핑종료
-                
-                    setTimeout(function(){
-                    //1초후에 다시 타이핑 반복 시작
-                    tyInt = setInterval(typing,100);
-                    },1000);
-                    } else if(liIndex==liLength-1){
-                    
-                    //마지막 문장까지 써지면 반복종료
-                    clearInterval(tyInt);
-                    }
-                } 
-            }    
-        })
+            //스크롤 시 옆에서 나타나기 (좌우에서 메뉴 나타나기 응용)
+            let 
+        });
     </script>
-
-    <style>
-        .typing-txt{display: none;}
-        ul{list-style:none;}
-        .typing ul li {
-            font-family: var(--font-title);
-            font-size: 15rem;
-            margin-top: 11rem;
-        }
-        .typing ul li.on {  
-            font-family: var(--font-title);
-            font-size: 15rem;
-            margin-top: 11rem;
-        } 
-        @keyframes cursor{ 
-            0%{border-right: 1px solid #fff} 
-            50%{border-right: 1px solid #000} 
-            100%{border-right: 1px solid #fff} 
-        }
-    </style>
 </head>
-<body>
+<body> 
+    
+    <div class="main">
+        <section class="web_design">
+            <div class="list">
+                <div class="item">
+                    <div class="inner">
+                        <div class="mockup">
+                            <figure>
+                                <img src="img/pc목업.png" alt="배스킨라빈스 목업">
+                            </figure>
+                            <div class="img">
+                                <figure>
+                                    <img src="img/br_main.png" alt="배스킨라빈스">
+                                </figure>
+                            </div>
+                        </div><!-- mockup -->
+                        <div class="text">
+                            <h5>Baskin Robbins</h5>
+                            <p>아이스크림/디저트 브랜드 배스킨 라빈스 모작 사이트입니다.</p>
+                            <div>
+                                <p><span>참여</span></p>
+                                <p>퍼블리싱 100%</p>
+                            </div>
+                            <div>
+                                <p><span>도구</span></p>
+                                <p>VSCode</p>
+                            </div>
+                            <div>
+                                <p><span>언어</span></p>
+                                <p>HTML / CSS</p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#모작</p>
+                            </div>
+                            <div class="btn">
+                                <a href="https://rubyyb.github.io/baskinrobbins/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                    </div><!-- inner -->
+                </div><!-- item -->
+                
+                <div class="item item_left">
+                    <div class="inner">
+                        <div class="text_left">
+                            <h5>악보바다</h5>
+                            <p>다양한 악보를 편리하게 제공하는 악보나라 리디자인 홈페이지입니다.</p>
+                            <div>
+                                <p>디자인, 퍼블리싱 100%</p>
+                                <p><span>참여</span></p>
+                            </div>
+                            <div>
+                                <p>PhotoShop, VSCode</p>
+                                <p><span>도구</span></p>
+                            </div>
+                            <div>
+                                <p>HTML / CSS / javascipt</p>
+                                <p><span>언어</span></p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#리디자인</p>
+                            </div>
+                            <div class="btn btn_left">
+                                <a href="pdf/악보바다.pdf" class="other" target="_blank">
+                                    <p>기획안</p>
+                                </a>
+                                <a href="https://www.figma.com/file/JzNKfPFKNu6lEAC1LYzCfB/%EB%82%98%EB%9A%9C%EB%A3%A8-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0-1&mode=design&t=SRMVLmnK6Q2BSogf-0" class="other" target="_blank">
+                                    <p>디자인</p>
+                                </a>
+                                <a href="https://rubyyb.github.io/music01/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                        <div class="mockup_left">
+                            <figure>
+                                <img src="img/pc목업.png" alt="pc목업">
+                            </figure>
+                            <div class="img">
+                                <figure>
+                                    <img src="img/악보바다_main.png" alt="악보바다">
+                                </figure>
+                            </div>
+                        </div><!-- mockup -->
+                    </div>
+                </div><!-- item item_left -->
 
-    <div class="typing-txt"> 
-        <ul>
-            <li>Welcome to my</li>
-            <li>Portfolio</li>
-        </ul>
-      
-    </div> 
-    <div class="typing">
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>  
+                <div class="item_phone">
+                    <div class="inner">
+                        <div class="mockup_small mockup">
+                            <figure>
+                                <img src="img/pc목업.png" alt="pc목업">
+                            </figure>
+                            <div class="img">
+                                <figure>
+                                    <img src="img/으뜸안경_main.png" alt="으뜸안경">
+                                </figure>
+                            </div>
+                            <div class="phone">
+                                <figure>
+                                    <img src="img/으뜸안경휴대폰목업.png" alt="으뜸안경 핸드폰 목업">
+                                </figure>
+                            </div><!-- phone -->
+                        </div><!-- mockup -->
+                        <div class="text">
+                            <h5>으뜸50안경</h5>
+                            <p>폭 넓은 안경 스타일을 제공하는 으뜸50안경 리디자인 홈페이지입니다.</p>
+                            <div>
+                                <p><span>참여</span></p>
+                                <p>디자인, 퍼블리싱 100%</p>
+                            </div>
+                            <div>
+                                <p><span>도구</span></p>
+                                <p>PhotoShop, FIgma, VSCode</p>
+                            </div>
+                            <div>
+                                <p><span>언어</span></p>
+                                <p>HTML / CSS / JavaScript / Jqury</p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#반응형</p>
+                                <p>#리디자인</p>
+                                <p>#서브페이지</p>
+                            </div>
+                            <div class="btn">
+                                <a href="https://rubyyb.github.io/glasses-mark/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                                <a href="https://www.figma.com/file/sxwAurXdDd8NOJQXM3PACX/%EC%9C%BC%EB%9C%B850%EC%95%88%EA%B2%BD-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0-1&mode=design&t=d08zto4mpKo6QEN1-0" class="other" target="_blank">
+                                    <p>디자인</p>
+                                </a>
+                                <a href="pdf/으뜸안경.pdf" class="other" target="_blank">
+                                    <p>기획안</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                    </div>
+                </div><!-- item_phon -->
+
+                <div class="item item_left">
+                    <div class="inner">
+                        <div class="text_left">
+                            <h5>Natuur</h5>
+                            <p>아이스크림/디저트 브랜드 나뚜루 리디자인 홈페이지입니다.</p>
+                            <div>
+                                <p>디자인, 퍼블리싱 100%</p>
+                                <p><span>참여</span></p>
+                            </div>
+                            <div>
+                                <p>Photoshop, Figma, VSCode</p>
+                                <p><span>도구</span></p>
+                            </div>
+                            <div>
+                                <p>HTML / CSS</p>
+                                <p><span>언어</span></p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#리디자인</p>
+                            </div>
+                            <div class="btn">
+                                <a href="pdf/나뚜루.pdf" class="other" target="_blank">
+                                    <p>기획안</p>
+                                </a>
+                                <a href="https://www.figma.com/file/JzNKfPFKNu6lEAC1LYzCfB/%EB%82%98%EB%9A%9C%EB%A3%A8-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0-1&mode=design&t=SRMVLmnK6Q2BSogf-0" class="other" target="_blank">
+                                    <p>디자인</p>
+                                </a>
+                                <a href="https://rubyyb.github.io/Natuur/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                        <div class="mockup_left">
+                            <figure>
+                                <img src="img/pc목업.png" alt="pc목업">
+                            </figure>
+                            <div class="img">
+                                <figure>
+                                    <img src="img/나뚜루_main.png" alt="나뚜루">
+                                </figure>
+                            </div>
+                        </div><!-- mockup -->
+                    </div>
+                </div><!-- item_left -->
+
+                <div class="item_phone">
+                    <div class="inner">
+                        <div class="mockup_small mockup">
+                            <figure>
+                                <img src="img/pc목업.png" alt="pc목업">
+                            </figure>
+                            <div class="img">
+                                <figure>
+                                    <img src="img/F5NATURE_main.png" alt="F5NATURE">
+                                </figure>
+                            </div>
+                            <figure class="phone">
+                                <img src="img/F5NATURE_mobile_mockup.png" alt="F5NATURE 모바일 목업">
+                            </figure>
+                        </div><!-- mockup -->
+                        <div class="text">
+                            <h5>F5NATURE</h5>
+                            <p>다양한 향기를 판매하는 F5NATURE 리디자인 홈페이지입니다.</p>
+                            <div>
+                                <p><span>참여</span></p>
+                                <p>디자인, 퍼블리싱 70%</p>
+                            </div>
+                            <div>
+                                <p><span>도구</span></p>
+                                <p>Figma, VSCode</p>
+                            </div>
+                            <div>
+                                <p><span>언어</span></p>
+                                <p>HTML / CSS / JavaScript / Jqury</p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#반응형</p>
+                                <p>#리디자인</p>
+                            </div>
+                            <div class="btn">
+                                <a href="https://rubyyb.github.io/F5NATURE/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                                <a href="https://www.figma.com/file/htijY2ovYgEz4JAsrsxoug/F5NATURE?type=design&node-id=0-1&mode=design&t=7OrkvtWB0KmzvtgY-0" class="other">
+                                    <p>디자인</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                    </div>
+                </div><!-- "item_phone -->
+
+                <div class="item item_left">
+                    <div class="inner">
+                        <div class="text_left" style="width: 675px;">
+                            <h5>천연비누 상세페이지</h5>
+                            <p>천연비누 상세페이지를 모작한 페이지입니다.</p>
+                            <div>
+                                <p>퍼블리싱 100%</p>
+                                <p><span>참여</span></p>
+                            </div>
+                            <div>
+                                <p>Photoshop, VSCode</p>
+                                <p><span>도구</span></p>
+                            </div>
+                            <div>
+                                <p>HTML / CSS</p>
+                                <p><span>언어</span></p>
+                            </div>
+                            <div class="web_key">
+                                <p>#PC</p>
+                                <p>#상세페이지</p>
+                            </div>
+                            <div class="btn">
+                                <a href="https://rubyyb.github.io/handmade_soap/" target="_blank">
+                                    <p class="main_btn">사이트 바로가기</p>
+                                </a>
+                            </div><!-- btn -->
+                        </div><!-- text end -->
+                        <div class="mockup_small" style="margin-top: 0;">
+                            <figure class="left">
+                                <img src="img/포토샵_상세페이지_1.png" alt="천연비누 상세페이지">
+                            </figure>
+                            <figure class="right">
+                                <img src="img/포토샵_상세페이지_2.png" alt="천연비누 상세페이지">
+                            </figure>
+                        </div><!-- mockup -->
+                    </div>
+                </div><!-- item_left -->
+            </div><!-- list -->
+        </section><!-- web_design -->
+    </div>
 </body>
 </html>
