@@ -175,7 +175,7 @@ body {
 .main .about .inner {
   max-width: 1330px;
   margin: 0 auto;
-  padding-top: 23.2rem;
+  padding: 23.2rem 0;
   display: flex;
   justify-content: flex-start;
   gap: 17.2rem;
@@ -314,8 +314,8 @@ body {
   border: 1px solid #333;
   border-radius: 1.5rem;
   position: absolute;
-  bottom: 10%;
-  right: 43%;
+  bottom: 30%;
+  right: 41.2%;
   transform: translateX(-50%);
 }
 .main .web_design_title {
