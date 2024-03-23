@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 @import url("reset.css");
 @font-face { /* 메인 타이틀 글씨 */
   font-family: "TTHakgyoansimMabeopsaR";
@@ -174,7 +174,8 @@ body {
 }
 .main .about .inner {
   max-width: 1330px;
-  margin: 23.2rem auto;
+  margin: 0 auto;
+  padding-top: 23.2rem;
   display: flex;
   justify-content: flex-start;
   gap: 17.2rem;
