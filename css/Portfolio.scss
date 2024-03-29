@@ -642,6 +642,16 @@ body {overflow-x: hidden;}
                             margin-right: 2.5rem;
                         }
                     }
+                    .qr_code {
+                        position: absolute;
+                        top: 21%;
+                        right: 0;
+                    }
+                    .qr_code_2 {
+                        position: absolute;
+                        top: 21%;
+                        right: -76px;
+                    }
                     .btn {
                         margin-top: 5rem;
                         a {
