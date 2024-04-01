@@ -39,7 +39,10 @@ html, body {
     font-family: var(--font-kr);
 }
 
-body {overflow-x: hidden;}
+body {
+    overflow-x: hidden;
+    min-width: 1920px;
+}
 
 .inner {
     max-width: 1600px;

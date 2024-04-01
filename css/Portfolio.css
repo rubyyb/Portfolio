@@ -38,6 +38,7 @@ html, body {
 
 body {
   overflow-x: hidden;
+  min-width: 1920px;
 }
 
 .inner {
